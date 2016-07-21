@@ -14,3 +14,9 @@ Run the script
 ```console
 /path-to-your-script/your-script 
 ```
+
+Example: 
+```console
+chmod 755 install_docker
+./install_docker
+```
