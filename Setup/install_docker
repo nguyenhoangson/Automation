@@ -1,5 +1,6 @@
 # Script for docker installation
 # in Ubuntu 14.04 LTS
+# Make sure you have root privilege ro tun this script
 
 ### Check current kernel version
 ### Require kernel >= 3.10
