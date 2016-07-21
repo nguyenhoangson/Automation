@@ -14,11 +14,11 @@ sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58
 
 ### Open /etc/apt/sources.list.d/docker.list
 ### If it does not exist, then create it
-sudo echo "" >> /etc/apt/sources.list.d/docker.list
+sudo su echo "" >> /etc/apt/sources.list.d/docker.list
 
-sudo truncate -s 0 /etc/apt/sources.list.d/docker.list # Delete any content of the file 
+sudo su truncate -s 0 /etc/apt/sources.list.d/docker.list # Delete any content of the file 
 
-sudo echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" >> /etc/apt/sources.list.d/docker.list # Add content for Ubuntu 14.04 LTS  
+sudo su echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" >> /etc/apt/sources.list.d/docker.list # Add content for Ubuntu 14.04 LTS  
 
 sudo apt-get update
 sudo apt-get purge lxc-docker
