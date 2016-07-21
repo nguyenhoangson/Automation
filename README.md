@@ -1,2 +1,2 @@
-# ShellScript
-Shell scripts for common tasks 
+# Automation
+Shell scripts for common tasks in Ubuntu 
