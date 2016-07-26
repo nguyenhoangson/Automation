@@ -30,4 +30,4 @@ curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
 sudo python get-pip.py
 
 # Install django
-pip install Django=1.7.4
+pip install Django==1.7.4
