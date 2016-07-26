@@ -1,0 +1,40 @@
+#!/bin/sh
+
+# Get the desired version from user
+while true; do
+    read -p "Please choose python version you want to install (2.7, 3.3, 3.5, etc.)? " version
+    case $version in
+    	 [0-9].[0-9][.]*[0-9]*) echo $version; break;;
+
+	 * ) echo "Default version is 2.7.11"; version=2.7.11; break;;
+    esac
+done
+
+# Install dependencies
+sudo apt-get install build-essential checkinstall
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+
+cd ~/Downloads/
+wget "http://python.org/ftp/python/$version/Python-$version.tgz"
+tar -xvf "Python-$version.tgz"
+cd "Python-$version"
+
+	
+First, install some dependencies:
+
+sudo apt-get install build-essential checkinstall
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+Then download using the following command:
+
+cd ~/Downloads/
+wget http://python.org/ftp/python/2.7.5/Python-2.7.5.tgz
+Extract and go to the dirctory:
+
+tar -xvf Python-2.7.5.tgz
+cd Python-2.7.5
+Now, install using the command you just tried:
+
+./configure
+make
+sudo checkinstall
+
