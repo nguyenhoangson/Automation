@@ -20,9 +20,6 @@ wget "http://python.org/ftp/python/$version/Python-$version.tgz"
 tar -xvf "Python-$version.tgz"
 cd "Python-$version"
 
-tar -xvf "Python-$version.tgz"
-cd "Python-$version"
-
 ./configure
 make
 sudo checkinstall
