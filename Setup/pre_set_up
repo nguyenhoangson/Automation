@@ -1,0 +1,10 @@
+### Pre install all dependencies
+
+# Install docker
+./install_docker
+
+# Install docker-machine
+./install_docker_machine
+
+# Install conda
+./install_conda 
