@@ -1,0 +1,25 @@
+### Set up django web server in Ubuntu 14.04 LTS
+
+sudo apt-get update
+
+# Install python, pip, django
+./install_python_pip_django
+
+# Install and set up docker
+
+# Install and set up docker-machine
+
+# Install coderunner package
+
+# Run django server and export it to port 8000
+mkdir ~/test_test
+cd ~/test_test
+
+git init
+git clone -b intergate-new-compiler --single-branch https://nguyenhoangson@github.com/nguyenhoangson/test-django-deploy.git intergate-new-compiler
+cd intergate-new-compiler
+python manage.py migrate
+python manage.py runserver 0.0.0.0:8000
+
+
+
