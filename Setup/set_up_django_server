@@ -1,15 +1,13 @@
 ### Set up django web server in Ubuntu 14.04 LTS
 
-sudo apt-get update
-
-# Install python, pip, django
-./install_python_pip_django
-
 # Install and set up docker
 ./install_docker 
 
 # Install and set up docker-machine
 ./install_docker_machine
+
+# Install python, pip, django
+./install_python_pip_django
 
 # Install coderunner package
 sudo pip install git+https://github.com/nguyenhoangson/CodeRunner.git
