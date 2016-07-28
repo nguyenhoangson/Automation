@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Install dependencies
+sudo apt-get install build-essential checkinstall
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+
+mkdir -p ~/Downloads/ # Create Downloads directory if it does not exist
+
+# Install python 2.7.12
+cd ~/Downloads/
+wget "http://python.org/ftp/python/2.7.12/Python-2.7.12.tgz"
+tar -xvf "Python-2.7.12.tgz"
+cd "Python-2.7.12"
+
+./configure
+make
+sudo checkinstall
+
+# Install pip 
+cd ~/Downloads/
+curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+sudo python get-pip.py
+
