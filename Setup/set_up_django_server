@@ -18,6 +18,7 @@ cd ~/test_test
 git init
 git clone -b intergate-new-compiler --single-branch https://nguyenhoangson@github.com/nguyenhoangson/test-django-deploy.git intergate-new-compiler
 cd intergate-new-compiler
+sudo pip install -r requirementx.txt 
 python manage.py migrate
 python manage.py runserver 0.0.0.0:8000
 
