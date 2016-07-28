@@ -6,5 +6,5 @@
 # Install docker-machine
 ./install_docker_machine
 
-# Install conda
-./install_conda 
+# Install pip 
+./install_pip
