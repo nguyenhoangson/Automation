@@ -7,4 +7,4 @@
 ./install_docker_machine
 
 # Install pip 
-./install_pip
+./install_python_pip
