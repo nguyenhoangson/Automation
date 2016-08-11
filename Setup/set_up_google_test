@@ -18,8 +18,8 @@ sudo make
 make test
 
 ### Set up so that google test libraries can be used system-wide level
-sudo cp -a include/gtest /usr/gtest/include
-sudo cp -a libgtest*.so /usr/gtest/lib/
+sudo cp -r include/gtest /usr/gtest/include
+sudo cp lib*.so /usr/gtest/lib/
 
 ### Export env variables
 export GTEST_HOME=/usr/gtest
